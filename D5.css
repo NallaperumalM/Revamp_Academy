@@ -1,0 +1,13 @@
+h1{
+    color: red;
+}
+*{
+    font-family: "Poppins", serif;
+}
+.para
+{
+    font-size: larger;
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration: double;
+}
