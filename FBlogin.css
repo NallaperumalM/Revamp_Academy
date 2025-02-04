@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;   
+}
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+.logo
+{
+    margin-top: 20px;
+    color: #1877F2;
+    font-size: 56px;
+    justify-content: center;
+    padding: 20px 0px;
+   
+  
+}
+.box
+{
+    background-color: white;
+    color: black;
+    width: 400px;
+    height: 580px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+.thala
+{
+    padding-top: 10px;
+    text-align: center;
+}
+.ttwo
+{
+    padding:8px 0px 8px 0px;
+    color:rgba(0, 0, 0, 0.863);
+}
+.form
+{
+    padding: 15px;
+
+}
+.fname
+{
+    width: 165px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #777;
+    padding-left:10px;
+    color: black
+}
+.lname
+{
+    width: 165px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left:10px;  
+    color: black;
+}
+.name
+{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.mobile
+{
+    width: 373px;
+    display: flex;
+    justify-content:space-around;
+
+}
+.email
+{
+    padding: 10px;
+    width: 350px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 10px;
+}
+.pass
+{
+    width: 350px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color:black;
+    margin-bottom: 10px;
+}
+.dob
+{
+   color: #606770;
+   font-weight: 600;
+   font-size: small;
+   margin-bottom:10px;
+}
+.date
+{
+    width: 113px;
+    padding: 8px;
+    border-radius: 5px;
+    
+}
+.Month
+{
+    width: 113px;
+    padding: 8px;
+    border-radius: 5px; 
+    margin-left: 12px;
+    
+}
+.Year
+{
+    width: 113px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 12px;
+}
+.Gender
+{
+   color: #606770;
+   font-weight: 600;
+   font-size: small;
+   margin-top:10px;
+   margin-bottom:10px; ;
+}
+.one
+{
+    width: 95px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    padding: 8px;
+}
+.two
+{
+    width: 95px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+}
+.three
+{
+    width: 95px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px; 
+}
+
+.option1
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+}
+
+.opt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.content1
+{
+    font-size: 10px;
+    font-weight: 600;
+    color:#777;
+    margin-bottom: 10px;
+}
+.content2{
+    font-size: 11px;
+    font-weight: 600;    ;
+    color:#777;
+    margin-bottom: 10px;
+}
+.but
+{
+    width: 220px;
+    padding: 5px;
+    background-color:rgb(4, 165, 4);
+    color: white;
+    border-radius: 6px;
+    font-size: 18px; 
+    border: 1px rgb(4, 165, 4) solid;
+    margin-top: 10px;  
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+.button
+{
+    display: flex;
+    justify-content: center;
+}
+button:hover{
+    cursor: pointer;
+}
+.account
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #1877f2 ;
+}
+.acct
+{
+   text-decoration: none;
+   font-size: large;
+   color: #1877F2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
