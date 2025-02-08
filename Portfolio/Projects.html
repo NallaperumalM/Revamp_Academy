@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="./Fonts/WEB/css/satoshi.css">
     <title>Portfolio</title>
 </head>
 <body>
     <div class="2xl:container w-[100%]">
         <!-- Section 1 -->
-        <div class="safetycontainer mx-auto w-[90%] md:w-[70%] grid grid-cols-1 font-[Poppins]">
+        <div class="safetycontainer mx-auto w-[90%] md:w-[70%] grid grid-cols-1 font-[Satoshi-Regular]">
             <div class="flex justify-between items-center my-4">
                 <div>
                     <h1 class="text-[30px] font-[400]">My Portfolio</h1>
@@ -25,70 +25,129 @@
         </div>
 
         <!-- Section 2 Navbar-->
-        <div class="safetycontainer mx-auto w-[90%] md:w-[70%] grid grid-cols-1  font-[Poppins] space-y-10">
-            <div class="bg-white shadow-2xl rounded-full  p-5 flex justify-around mt-4 text-[16px] font-[400]">
-                <a href="./index.html">Home</a>
-                <a href="./About.html">About</a>
-                <a href="./Projects.html">Projects</a>
-                <a href="./Resume.html">Resume</a>
-                <a href="./Tools.html">Tools</a>
-                <a href="./AMA.html">Ama</a>
+        <div class="hidden md:block">
+            <div class="safetycontainer mx-auto w-[90%] md:w-[70%] grid grid-cols-1 font-[Satoshi-Regular] space-y-10 ">
+                <div class="bg-white  hover:bg-black hover:text-white shadow-2xl rounded-full  p-5 flex justify-around mt-4 text-[16px] font-[400]">
+                    <a href="./index.html">Home</a>
+                    <a href="./About.html">About</a>
+                    <a href="./Projects.html">Projects</a>
+                    <a href="./Resume.html">Resume</a>
+                    <a href="./Tools.html">Tools</a>
+                    <a href="./AMA.html">Ama</a>
+                </div>
             </div>
-        </div>        
+        </div>
+    
+            <!-- Bottom Navbar -->
+            <div class="fixed bottom-0 w-[100%] md:hidden ">
+            <div class="safetycontainer mx-auto w-[90%] md:w-[70%] grid grid-cols-1 font-[Satoshi-Regular] space-y-10 ">
+                <div class="bg-white  hover:bg-black hover:text-white shadow-2xl rounded-full  p-5 flex justify-around mt-4 text-[16px] font-[400]">
+                    <a href="./index.html">Home</a>
+                    <a href="./About.html">About</a>
+                    <a href="./Projects.html">Projects</a>
+                    <a href="./Resume.html">Resume</a>
+                    <a href="./Tools.html">Tools</a>
+                    <a href="./AMA.html">Ama</a>
+                </div>
+            </div>
+            </div>
+                  
+        
+        
          <!-- Section 3 Cards-->
-         <div class="safetycontainer mx-auto w-[90%] md:w-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-[Poppins] gap-x-5">
-            <!-- Card1 2 -->
-            <div class="bg-white w-[300px] space-y-4 mt-10 grid items-center">
-                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="h-[200px]">
-                <p class="text-18px font-[400]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <div class="flex justify-between">
-                    <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
-                    <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
-                </div>
+        <div class="font-[Satoshi-Regular] safetycontainer mx-auto w-[90%] md:w-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  ">
+            
+           <!-- Card 1-->
+            <div class="space-y-2">
+                   
+                       <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="mt-8">
+                       <p class="text-18px font-[400] leading-[24px]">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                       </p>
+                    
+                       <div class="flex justify-between">
+                      <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
+                      <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
+                    </div>
+                  
             </div>
-            <div class="bg-white w-[300px] space-y-4 mt-10  grid items-center">
-                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="h-[200px]">
-                <p class="text-18px font-[400]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+            <!-- Card 2 -->
+            <div class="space-y-2">
+                   
+                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="mt-8">
+                <p class="text-18px font-[400] leading-[24px]">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+             
                 <div class="flex justify-between">
-                    <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
-                    <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
-                </div>
+               <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
+               <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
+             </div>
+           
             </div>
-            <!-- Card 3 4 -->
-            <div class="bg-white w-[300px] space-y-4 mt-10  grid items-center">
-                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="h-[200px]">
-                <p class="text-18px font-[400]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+            <!-- Card 3 -->
+            <div class="space-y-2">
+                   
+                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="mt-8">
+                <p class="text-18px font-[400] leading-[24px]">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+             
                 <div class="flex justify-between">
-                    <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
-                    <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
-                </div>
+               <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
+               <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
+             </div>
+           
             </div>
-            <div class="bg-white w-[300px] space-y-4 mt-10  grid items-center">
-                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="h-[200px]">
-                <p class="text-18px font-[400]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+            <!-- Card 4 -->
+            <div class="space-y-2">
+                   
+                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="mt-8">
+                <p class="text-18px font-[400] leading-[24px]">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+             
                 <div class="flex justify-between">
-                    <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
-                    <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
-                </div>
+               <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
+               <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
+             </div>
+           
             </div>
-            <!-- Card 5 6 -->
-            <div class="bg-white w-[300px] space-y-4 mt-10  grid items-center">
-                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="h-[200px]">
-                <p class="text-18px font-[400]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+            <!-- Card 5 -->
+            <div class="space-y-2">
+                   
+                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="mt-8">
+                <p class="text-18px font-[400] leading-[24px]">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+             
                 <div class="flex justify-between">
-                    <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
-                    <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
-                </div>
+               <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
+               <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
+             </div>
+           
             </div>
-            <div class="bg-white w-[300px] space-y-4 mt-10  grid items-center">
-                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="h-[200px]">
-                <p class="text-18px font-[400]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+            <!-- Card 6 -->
+            <div class="space-y-2">
+                   
+                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/proimg.avif?updatedAt=1738891475457" class="mt-8">
+                <p class="text-18px font-[400] leading-[24px]">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+             
                 <div class="flex justify-between">
-                    <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
-                    <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
-                </div>
-            </div>            
-        </div>  
+               <button class="cursor-pointer bg-[#49de80] text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>Live Link</button>
+               <button class="cursor-pointer bg-black text-white flex p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub Link</button>
+             </div>
+           
+            </div>
+        </div>
+         
          
 
                  <!-- Copyright-->
