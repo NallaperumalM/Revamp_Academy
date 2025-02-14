@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+</head>
+<body>
+    <h2 id="heading">Hello</h2>
+    <button id="btn">Change</button>
+    <button id="btn1">Retrive</button>
+
+    <script>
+        const h2=document.getElementById("heading")
+        const button=document.getElementById("btn")
+        const button1=document.getElementById("btn1")
+        button.addEventListener("click",()=>{
+            h2.textContent="Hi"
+        })
+        button1.addEventListener("click",()=>{
+            h2.textContent="Hello"
+        })
+
+       
+    </script>
+</body>
+</html>

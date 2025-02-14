@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="bg-black flex justify-center">
+    <div class="space-y-10">
+    <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/bulb1.webp" alt="" class="ml-18 h-[200px]" id="img1">
+    <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/cat1.webp" alt="" class="h-[300px]"  id="img2">
+    <div class="bg-slate-500 w-40 p-4 flex-col space-y-4 rounded-xl ml-13">
+    <h1 id="para" class="text-white ml-6">Switched on</h1>
+    <div class="flex justify-between">
+    <button class="border cursor-pointer px-2 text-black rounded-lg bg-white" id="btn1">on</button>
+    <button class="border cursor-pointer px-2 text-black rounded-lg bg-white" id="btn2">off</button>
+</div>
+</div>
+</div>
+    <script>
+        const image1=document.getElementById("img1")
+        const image2=document.getElementById("img2")
+        const onbtn=document.getElementById("btn1")
+        const offbtn=document.getElementById("btn2")
+        const spara=document.getElementById("para")
+
+        
+        offbtn.addEventListener("click",()=>{
+            image1.src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/bulb2.webp"
+            image2.src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/cat2.webp"
+            spara.textContent="Switched off"
+            offbtn.className="px-2 text-white rounded-lg bg-red-900"
+            onbtn.className=" cursor-pointer px-2 text-black rounded-lg bg-white"
+          
+        })
+
+        onbtn.addEventListener("click",()=>{
+            image1.src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/bulb1.webp"
+            image2.src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/cat1.webp"
+            spara.textContent="Switched on"
+            onbtn.className="bg-red-900"
+            onbtn.className="px-2 text-white rounded-lg bg-green-900"
+            offbtn.className=" cursor-pointer px-2 text-black rounded-lg bg-white"
+        })
+
+    </script>
+</body>
+</html>
