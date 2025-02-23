@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
-<body>
+<body class="overflow-x-hidden w-[100%] h-[100%]">
 
     <!-- Starting... -->
 
@@ -30,7 +30,7 @@
       <p class="font-[Roboto] text-[#363040] text-[14px] font-[400]  hover:bg-[#e9daff] p-2  hover:border-[#e9daff] hover:rounded-md cursor-pointer">Explore</p></div>
 
       
-        <p  class="ml-4 p-3 hover:bg-[#f9f6ff] hidden md:flex pl-2 pr-58 gap-1 items-center md:border-black border-1 rounded-full cursor-">
+        <p  class="ml-4 p-3 hover:bg-[#f9f6ff] hidden md:flex pl-2 pr-58 gap-1 items-center md:border-[#9093ab] border-1 rounded-full cursor-">
             <svg 
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -42,7 +42,7 @@
                   fill="currentColor"
                   d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"
                 ></path>
-              </svg><span class="hidden md:flex"> Search for anything </span></p>
+              </svg><span class="hidden md:flex text-[#2f3040 text-[14px] font-[400] leading-[20px]"> Search for anything </span></p>
        </div>
         <ul class=" ml-2 hidden md:flex  justify-evenly gap-6">
             <li class=" text-[14px] font-[400] leading-[20px] text-[#363040] hover:text-[#6b28d1] hover:bg-[#e9daff] p-2 ml-2 hover:border-[#e9daff] hover:rounded-md cursor-pointer">Plans & Pricing</li>
@@ -425,13 +425,7 @@
              <button class="cursor-pointer bg-[#c3e9eb] border-[#c3e9eb] text-[#0d5161] text-[16px] font-[700] leading-[19px] rounded-lg border py-1 px-2 flex justify-center items-center">Best seller</button>
           </div>
           </div>
-         </div>
-  
-        
-  
-         
-  
-        
+         </div>        
          </div>
        </div>
        
@@ -442,8 +436,51 @@
         <h1 class=" text-[#2f3040] font-[SuisseWorks] text-[31px] font-[700] leading-[39px] mx-5 my-6">Learning focused on your goals</h1>
         <div class="safety-container mx-auto w-[95%] grid grid-cols-1 md:grid-cols-2  bg-[#f7f8fa]">
           <!-- card-1 -->
-           <div>
-
+           <div class="my-10 overflow-auto">
+            <div class="flex-col space-y-4">
+              <div class="cursor-pointer flex bg-white py-8 px-5 border border-[#5022c3] rounded-lg w-[500px] gap-6 hover:bg-[#e9daff]">
+                  <div>
+                    <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/Udemy/img-card-1-hands-on-practice" alt="" class="h-20 w-25">
+                  </div>
+          
+                <div class="space-y-4">
+                  <h1 class="text-[18px] font-[700] leading-[21px]">Hands-on training</h1>
+                  <p class="text-[#585b73] text-[16px] font-[400] leading-[19px]">Upskill effectively with AI-powered coding exercises, practice tests, and quizzes.</p>
+                </div>
+              </div>
+            
+              <div class="cursor-pointer flex bg-white py-8 px-5 border border-[#5022c3] rounded-lg w-[500px] gap-6 hover:bg-[#e9daff]">
+                <div>
+                  <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/Udemy/card-img-2-certificate.webp" alt="" class="h-20 w-25">
+                </div>
+              <div class="space-y-4">
+                <h1 class="text-[18px] font-[700] leading-[21px]">Certification prep</h1>
+                <p class="text-[#585b73] text-[16px] font-[400] leading-[19px]">Prep for industry-recognized certifications by solving real-world challenges and earn badges along the way</p>
+              </div>
+            </div>
+          
+            <div class="cursor-pointer flex bg-white py-8 px-5 border border-[#5022c3] rounded-lg w-[500px] gap-6 hover:bg-[#e9daff]">
+              <div>
+                <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/Udemy/card-img-3-insights.webp" alt="" class="h-20 w-25">
+              </div>
+            <div class="space-y-4">
+              <h1 class="text-[18px] font-[700] leading-[21px]">Insights and analytics</h1>
+              <p class="text-[#585b73] text-[16px] font-[400] leading-[19px]">Fast-track goals with advanced insights plus a dedicated customer success team to help drive effective learning.
+          
+              </p>
+            </div>
+          </div>
+          
+          <div class="cursor-pointer flex bg-white py-8 px-5 border border-[#5022c3] rounded-lg w-[500px] gap-6 hover:bg-[#e9daff]">
+            <div>
+              <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/Udemy/card-img-4-customizable.webp" alt="" class="h-20 w-25">
+            </div>
+          <div class="space-y-4">
+            <h1 class="text-[18px] font-[700] leading-[21px]">Customizable content</h1>
+            <p class="text-[#585b73] text-[16px] font-[400] leading-[19px]">Create tailored learning paths for team and organization goals and even host your own content and resources.</p>
+          </div>
+          </div>
+          </div>
            </div>
            <!-- card-2 -->
             <div>
@@ -455,32 +492,446 @@
        </div>
       
      <!-- Accelerate Growth -->
-     <div>
+     <div class="my-8">
+      <h1 class="my-4 text-[#2f3040] font-[SuisseWorks] text-[31px] font-[700] mx-5 leading-[39px]">Accelerate growth — for you or your organization</h1>
+      <p class="mx-5 text-[#585b73] text-[16px] font-[400] leading-[19px]">Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn more.</p>
+    </div>
+
+    <!-- Cards on Growth -->
+     <div class="flex justify-center items-center mx-auto">
+     <div class="2xl:container mx-auto w-[100%]">
+      <div class="safety-container w-[95%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center ">
+        <!-- Card 1 -->
+        <div>
+         
+          <div class=" m-5 rounded-xl border border-t-8 border-t-[#a535f0]  border-[#d1d2e0] w-[400px]  h-[600px] shadow-xl flex-col justify-center items-center ">
+    
+            <div class="bg-[#f7f8fa] p-4 pl-6 ">
+                <h1 class="text-[#2f3040] font-[SuisseWorks] text-[20px] font-[700] leading-[24px]">Personal Plan</h1>
+                <p  class="py-1 text-[#585b73] text-[12px] font-[400] leading-[17px]">For you</p>
+                <p class="mt-1 flex py-1 text-[#585b73] text-[14px] font-[400] leading-[20px"><svg class="h-5" fill="#878787" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#878787"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"></path></g></svg>Individual</p>
+              </div>
+              <div class="p-6">
+                <h1 class="text-[16px] font-[700] leading-[22px]">Starting at &#x20B9;850 per month</h1>
+                <p class="py-1 text-[#585b73] text-[12px] font-[400] leading-[17px]"  >Billed monthly on annually Cancel anytime</p>
+                <button class="mt-6 cursor-pointer bg-[#6d28d2] border-[#6d28d2] text-white text-[16px] font-[700] leading-[19px] rounded-md  px-22 flex gap-3 justify-center items-center py-4">Start subscription<svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
+              </div>
+              <div class="pl-6 ">
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5 " fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Access to 12,000+ top courses</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Certifications prep</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Goal-focused recommendations</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>AI-powered coding exercises</p>
+               
+              </div>
+           </div>
+              
+        </div>
+        <!-- Card 2 -->
+        <div>
+          <div class="m-5 rounded-xl border border-t-8 border-t-[#4f21c2]  border-[#d1d2e0] w-[400px]  h-[600px] shadow-xl flex-col justify-center items-center ">
+    
+            <div class="bg-[#f7f8fa] p-4 pl-6 ">
+                <h1 class="text-[#2f3040] font-[SuisseWorks] text-[20px] font-[700] leading-[24px]">Team Plan</h1>
+                <p  class="py-1 text-[#585b73] text-[12px] font-[400] leading-[17px]">For your team</p>
+                <p class="mt-1 flex py-1 text-[#585b73] text-[14px] font-[400] leading-[20px"><svg class="h-5 mr-1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#919191" class="bi bi-people-fill" stroke="#919191"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path> <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"></path> <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path> </g></svg>2 to 20 people</p>
+              </div>
+              <div class="p-6">
+                <h1 class="text-[16px] font-[700] leading-[22px]">₹2,000 a month per user</h1>
+                <p class="py-1 text-[#585b73] text-[12px] font-[400] leading-[17px]"  >Billed annually. Cancel anytime.</p>
+                <button class="mt-6 cursor-pointer bg-[#6d28d2] border-[#6d28d2] text-white text-[16px] font-[700] leading-[19px] rounded-md  px-22 flex gap-3 justify-center items-center py-4">Start subscription<svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
+              </div>
+              <div class="pl-6 ">
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5 " fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Access to 12,000+ top courses</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Certifications prep</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Goal-focused recommendations</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>AI-powered coding exercises</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Analytics and adoption reports</p>
+               
+              </div>
+           </div>
+              
+        </div>
+        <!-- Card 3 -->
+        <div>
+          <div class=" m-5 rounded-xl border border-t-8 border-t-[#4f21c2]  border-[#d1d2e0] w-[400px]  h-[600px] shadow-xl flex-col justify-center items-center ">
+    
+            <div class="bg-[#f7f8fa] p-4 pl-6 ">
+                <h1 class="text-[#2f3040] font-[SuisseWorks] text-[20px] font-[700] leading-[24px]">Enterprise Plan</h1>
+                <p  class="py-1 text-[#585b73] text-[12px] font-[400] leading-[17px]">For your whole organization</p>
+                <p class="mt-1 flex py-1 text-[#585b73] text-[14px] font-[400] leading-[20px"><svg class="h-5 mr-1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#919191" class="bi bi-people-fill" stroke="#919191"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path> <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"></path> <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path> </g></svg>More than 20 people</p>
+              </div>
+              <div class="p-6">
+                <h1 class="text-[16px] font-[700] leading-[22px]">Contact sales for pricing</h1>
+                <!-- <p class="py-1 text-[#585b73] text-[12px] font-[400] leading-[17px]"  >Billed monthly on annually Cancel anytime</p> -->
+                <button class="mt-12 cursor-pointer bg-[#6d28d2] border-[#6d28d2] text-white text-[16px] font-[700] leading-[19px] rounded-md  px-22 flex gap-3 justify-center items-center py-4">Start subscription<svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
+              </div>
+              <div class="pl-6 ">
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5 " fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Access to 12,000+ top courses</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Certifications prep</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Goal-focused recommendations</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>AI-powered coding exercises</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Advanced analytics and insights</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Dedicated customer success team</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>International course collection featuring 15 languages</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Customizable content</p>
+                <p class="flex py-1 text-[#2f3040] text-[14px] font-[400] leading-[20px] gap-4"><svg class="h-5" fill="#6b6b6b" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g> <path d="M58.3945,32.1563,42.9961,50.625l-5.3906-6.4629a5.995,5.995,0,1,0-9.211,7.6758l9.9961,12a5.9914,5.9914,0,0,0,9.211.0059l20.0039-24a5.9988,5.9988,0,1,0-9.211-7.6875Z"></path> <path d="M48,0A48,48,0,1,0,96,48,48.0512,48.0512,0,0,0,48,0Zm0,84A36,36,0,1,1,84,48,36.0393,36.0393,0,0,1,48,84Z"></path> </g> </g></svg>Hands-on tech training with add-on</p>
+                
+               
+              </div>
+           </div>
+              
+        </div>
+
+ 
+      </div>
 
      </div>
+    </div>
      <!-- Reviews -->
-     <div>
+     <div class="bg-[#f7f8fa] space-y-4 py-6">
+       <div>
+        <h1  class="mt-5 text-[#2f3040] font-[SuisseWorks] text-[31px] font-[700] leading-[39px] my-9 mx-5">See what others are achieving through learning</h1>
+       </div>
+       <div class="2xl:container mx-auto w-[100%] flex justify-center item-center">
+        <div class="safety-container mx-auto w-[95%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <!-- Card 1 -->
+           <div>
+            <div class="w-[300px] h-[300px] border p-5 rounded-lg border-[#d1d2e0] sm:overflow-auto">
+              <svg class="flex-col justify-start items-start" fill="#000000" height="40px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1 C9.3,11.8,11,11,13,11z"></path> <path d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5 S25.8,13,23,13z"></path> </g> </g></svg>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#2f3040]  pt-2">Because of this course I was able to clear my two interviews... Thanks for making such wonderful content.</p>
+              <div class="flex pt-8 gap-2">
+                <p class="text-[16px] font-[700] text-white bg-[#2f3040] rounded-full w-10 p-2 ">DS</p>
+                <p class="font-[400] leading-[17px] text-[12px] text-[#585b73] flex items-center">Diksha S</p>
+              </div>
+              <div class="flex gap-2 mt-6 text-[#6b28d1] text-[14px] font-[400] leading-[17px]">
+              <p >Business Intelligence(BI)</p>
+              <p>></p>
+            </div>
+             </div>
+           </div>
+           <!-- Card 2 -->
+           <div>
+            <div class="w-[300px] h-[300px] border p-5 rounded-lg border-[#d1d2e0]">
+              <svg class="flex-col justify-start items-start" fill="#000000" height="40px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1 C9.3,11.8,11,11,13,11z"></path> <path d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5 S25.8,13,23,13z"></path> </g> </g></svg>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#2f3040]  pt-2">This course gave me clarity on complex topics, helping me excel in coding... Thanks for this valuable content.</p>
+              <div class="flex pt-8 gap-2">
+                <p class="text-[16px] font-[700] text-white bg-[#2f3040] rounded-full w-10 p-2 ">CB</p>
+                <p class="font-[400] leading-[17px] text-[12px] text-[#585b73] flex items-center">Chethan B</p>
+              </div>
+              <div class="flex gap-2 mt-6 text-[#6b28d1] text-[14px] font-[400] leading-[17px]">
+              <p >Business Intelligence(BI)</p>
+              <p>></p>
+            </div>
+             </div>
+           </div>
+           <!-- Card 3 -->
+           <div>
+            <div class="w-[300px] h-[300px] border p-5 rounded-lg border-[#d1d2e0]">
+              <svg class="flex-col justify-start items-start" fill="#000000" height="40px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1 C9.3,11.8,11,11,13,11z"></path> <path d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5 S25.8,13,23,13z"></path> </g> </g></svg>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#2f3040]  pt-2">Because of this course, I gained real-world skills and improved my confidence... </p>
+              <div class="flex pt-8 gap-2">
+                <p class="text-[16px] font-[700] text-white bg-[#2f3040] rounded-full w-10 p-2 ">BK</p>
+                <p class="font-[400] leading-[17px] text-[12px] text-[#585b73] flex items-center">Batchu K</p>
+              </div>
+              <div class="flex gap-2 mt-6 text-[#6b28d1] text-[14px] font-[400] leading-[17px]">
+              <p >Business Intelligence(BI)</p>
+              <p>></p>
+            </div>
+             </div>
+           </div>
+           <!-- Card 4 -->
+           <div>
+            <div class="w-[300px] h-[300px] border p-5 rounded-lg border-[#d1d2e0]">
+              <svg class="flex-col justify-start items-start" fill="#000000" height="40px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1 C9.3,11.8,11,11,13,11z"></path> <path d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5 S25.8,13,23,13z"></path> </g> </g></svg>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#2f3040]  pt-2">With this course, I enhanced my problem-solving and landed my dream job... Thanks for the excellent content.</p>
+              <div class="flex pt-8 gap-2">
+                <p class="text-[16px] font-[700] text-white bg-[#2f3040] rounded-full w-10 p-2 ">VJ</p>
+                <p class="font-[400] leading-[17px] text-[12px] text-[#585b73] flex items-center">Vijay</p>
+              </div>
+              <div class="flex gap-2 mt-6 text-[#6b28d1] text-[14px] font-[400] leading-[17px]">
+              <p >Business Intelligence(BI)</p>
+              <p>></p>
+            </div>
+             </div>
+           </div>
+        </div>
 
+      </div>
      </div>
      <!-- Trending Now -->
-     <div>
-
+     <div class="bg-[#f7f8fa] p-5">
+      <div class="mx-5 my-8 ">
+        <h1 class=" my-4 text-[31px] text-[#2f3040] font-[700] leading-[39px] font-[SuisseWorks]">Trending Now</h1>
+        <hr class="text-[#d1d2e0]">
+      </div>
+      <div class="2xl:container mx-auto w-[100%]">
+        <div class="safety-container mx-auto w-[95%] grid grid-cols-1 md-grid-cols-2 lg:grid-cols-4 gap-8">
+         <!-- Heading 1 -->
+          <div>
+            <div >
+              <h1  class="text-[31px] text-[#2f3040] font-[700] leading-[37px]">ChatGPT is a top <br> skill</h1>
+              <div class="flex  text-[#4f21c2] text-[18px] font-[700] leading-[21px] mt-6 ">
+                <p class="cursor-pointer">See ChatGPT courses</p>
+                <p class="text-center cursor-pointer">></p>
+              </div>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#9093ab] mt-2">4,162,438 learners</p>
+              <button class="my-8 pl-8 pr-8 border border-[#6b28d1] hover:bg-[#e9daff] p-2 rounded-md  flex text-[#6b28d1] justify-center items-center cursor-pointer text-[16px] font-[700] leading-[21px]">Show all trending skills <svg class="h-6" width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#5022c3"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Trending_Up"> <path id="Vector" d="M20.0005 7L14.1543 12.9375C14.0493 13.0441 13.9962 13.0976 13.9492 13.1396C13.1899 13.8193 12.0416 13.8193 11.2822 13.1396C11.2352 13.0976 11.1817 13.0442 11.0767 12.9375C10.9716 12.8308 10.9191 12.7774 10.8721 12.7354C10.1127 12.0557 8.96397 12.0557 8.20461 12.7354C8.15771 12.7773 8.10532 12.8305 8.00078 12.9367L4 17M20.0005 7L20 13M20.0005 7H14" stroke="#5022c3" stroke-width="1.272" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></button>
+            </div>
+          </div>
+          <!-- Heading 2 -->
+          <div>
+            <div>
+              <h1 class="text-[24px] text-[#2f3040] font-[700] leading-[33px]">Development</h1>
+              <div class="flex  text-[#4f21c2] text-[18px] font-[700] leading-[21px] mt-6">
+                <p class="cursor-pointer">Python</p>
+                <p class="cursor-pointer">></p>
+              </div>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#9093ab] mt-2">4,162,438 learners</p>
+              <div class="flex  text-[#4f21c2] text-[18px] font-[700] leading-[21px] mt-6">
+                <p class="cursor-pointer">Web Development</p>
+                <p class="cursor-pointer">></p>
+              </div>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#9093ab] mt-2">13,937,375 learners</p>
+              <div class="flex  text-[#4f21c2] text-[18px] font-[700] leading-[21px] mt-6">
+                <p class="cursor-pointer">Data Science</p>
+                <p class="cursor-pointer">></p>
+              </div>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#9093ab] mt-2">7,712,530 learners</p>
+            </div>
+          </div>
+          <!-- Heading 3 -->
+          <div>
+            <div>
+              <h1 class="text-[24px] text-[#2f3040] font-[700] leading-[33px]">Design</h1>
+              <div class="flex  text-[#4f21c2] text-[18px] font-[700] leading-[21px] mt-6">
+                <p class="cursor-pointer">Blender</p>
+                <p class="cursor-pointer">></p>
+              </div>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#9093ab] mt-2">2,881,210 learners</p>
+              <div class="flex  text-[#4f21c2] text-[18px] font-[700] leading-[21px] mt-6">
+                <p class="cursor-pointer">Graphic Design</p>
+                <p class="cursor-pointer">></p>
+              </div>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#9093ab] mt-2">4,461,204 learners</p>
+              <div class="flex  text-[#4f21c2] text-[18px] font-[700] leading-[21px] mt-6">
+                <p class="cursor-pointer">Adobe Photoshop</p>
+                <p class="cursor-pointer">></p>
+              </div>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#9093ab] mt-2">12,648,710 learners</p>
+            </div>
+          </div>
+          <!-- Heading 4 -->
+          <div>
+            <div>
+              <h1 class="text-[24px] text-[#2f3040] font-[700] leading-[33px]">Business</h1>
+              <div class="flex  text-[#4f21c2] text-[18px] font-[700] leading-[21px] mt-6">
+                <p class="cursor-pointer">Project Management(PM)</p>
+                <p class="cursor-pointer">></p>
+              </div>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#9093ab] mt-2">2,520,583 learners</p>
+              <div class="flex  text-[#4f21c2] text-[18px] font-[700] leading-[21px] mt-6">
+                <p class="cursor-pointer">Microsoft Power BI</p>
+                <p class="cursor-pointer">></p>
+              </div>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#9093ab] mt-2">4,558,850 learners</p>
+              <div class="flex  text-[#4f21c2] text-[18px] font-[700] leading-[21px] mt-6">
+                <p class="cursor-pointer">Project Management</p>
+                <p class="cursor-pointer">></p>
+              </div>
+              <p class="text-[14px] font-[400] leading-[20px] text-[#9093ab] mt-2">3,906,799 learners</p>
+            </div>
+          </div>
+        </div> 
+      </div>
      </div>
-     <!-- Top Companies -->
-     <div>
-
+     <hr class="mx-5 text-[#d1d2e0]">
+     <!-- Booz -->
+     <div class="bg-[#f7f8fa] ">
+      <div class="mx-auto w-100%">
+        <div class="safety-container  mx-auto grid grid-cols-1 md:grid-cols-2 ">
+          <div class="mt-15">
+            <div>
+              <h1 class="mt-4 mx-5 text-[30px] font-[400] leading-[25px] text-[#2f3040]">Booz | Allen | Hamilton</h1>
+              <h1 class="my-10 mx-5 text-[31px] font-[700] leading-[37px] text-[#2f3040]">Booz Allen Hamilton Unlocks Talent <br> Retention and Productivity Through <br> Upskilling</h1>
+            </div>
+            <div class="flex">
+              <h1 class="mx-5 text-[39px] font-[700] leading-[47px] text-[#2f3040]">93%</h1>
+              <h1 class="ml-27 lg:ml-49 mx-5 text-[39px] font-[700] leading-[47px] text-[#2f3040]">65%</h1>
+            </div>
+            <div class="flex">
+              <p class="mx-5 text-[#2f3040] text-[16px] font-[400] leading-[19px]">retention rate among participating <br> employees</p>
+              <p class="mx-5 ml-8 text-[#2f3040] text-[16px] font-[400] leading-[19px]">of learners noted a positive impact on <br> their productivity</p>
+            </div>
+              
+              <button  class="mx-5 my-5 flex p-4 justify-center item-center border bg-[#6b28d1] text-white text-[16px] font-[700] rounded-md leading-[19px] cursor-pointer">Read full story<svg class="h-5 mt-0.5 ml-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff5f5"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
+            
+          </div>
+          <div>
+            <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/Udemy/udemy-upskilling-img-1.webp" alt="" class="mt-5">
+          </div>
+        </div>
+      </div>
      </div>
+
+     <!-- Top companies -->
+      <div class="mx-auto w-[100%] bg-[#1c1d26]">
+        <div class="safety-container mx-auto w-[100%] grid grid-cols-1 lg:grid-cols-2 justify-evenly">
+          <div>
+            <h1 class="p-8 pt-7 text-white text-[18px] font-[700] leading-[21px]">Top companies choose <span class="text-[#c0c4fc] hover:underline cursor-pointer">Udemy Business</span> to build in-demand career skills.</h1>
+          </div>
+          <div class="flex gap-8 justify-between overflow-auto p-4">
+            <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/Udemy/brand-udemy-1.svg?updatedAt=1740306691518" alt="">
+         
+            <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/Udemy/brand-udemy-2.svg?updatedAt=1740306691575" alt="">
+          
+            <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/Udemy/brand-udemy-3.svg?updatedAt=1740306692202" alt="">
+          
+            <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/Udemy/brand-udemy-4.svg?updatedAt=1740306691467" alt="">
+          
+          </div>
+        </div>
+        <hr class="text-white">
+      </div>
      <!-- Explore Top Skills -->
+      <div class="bg-[#1d1e27]">
+        <h1 class="ml-8 text-white text-[18px] font-[700] leading-[24px] font-[SuisseWorks] mx-5 py-8 ">Explore top skills and certifications</h1>
+      </div>
      <div>
+      <div class="2xl:container mx-auto w-[100%] bg-[#1d1e27] flex justify-around">
+        <div class="pb-5 safety-container w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between">
+          <div>
+            <!-- Card-1 -->
+             <div class="pt-5 space-y-1">
+              <h1 class="text-white text-[16px] font-[700] leading-[19px] pb-4">Certifications by Issuer</h1>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Amazon Web Services (AWS) Certifications</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Six Sigma Certifications</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Microsoft Certifications</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Cisco Certifications</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Tableau Certifications</p>
+             </div>
+             <!-- Card-2 -->
+              <div  class="pt-8 space-y-1">
+                <h1 class="text-white text-[16px] font-[700] leading-[19px] pb-4">Web Development</h1>
+                <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Web Development</p>
+                <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Javascript</p>
+                <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">React JS</p>
+                <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Angular</p>
+                <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Java</p>
+              </div>
+          </div>
+          <div>
+            <!-- Card-3 -->
+            <div  class="pt-5 space-y-1">
+              <h1 class="text-white text-[16px] font-[700] leading-[19px] pb-4">IT Certifications</h1>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Amazon AWS</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">AWS Cloud</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Az-900</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Architect Associate</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Kubernetes</p>
+            </div>
+             <!-- Card-4 -->
+             <div  class="pt-8 space-y-1">
+              <h1 class="text-white text-[16px] font-[700] leading-[19px] pb-4">Leadership</h1>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Leadership</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Management skills</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Project Management</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Personal Productivity</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Emotional Intelligence</p>
+            </div>
+          </div>
+          <div>
+            <!-- Card-5 -->
+            <div  class="pt-5 space-y-1">
+              <h1 class="text-white text-[16px] font-[700] leading-[19px] pb-4">Certifications by Skill</h1>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Cybersecurity</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Project Management Certification</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Cloud Certifications</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Data Analytics</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">HR Management</p>
+            </div>
+             <!-- Card-6 -->
+             <div  class="pt-8 space-y-1">
+              <h1 class="text-white text-[16px] font-[700] leading-[19px] pb-4">Data Science</h1>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Data Science</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Python</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Machine Learning</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">ChatGPT</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Deep Learning</p>
+            </div>
+          </div>
+          <div>
+            <!-- Card-7 -->
+            <div  class="pt-5 space-y-1">
+              <h1 class="text-white text-[16px] font-[700] leading-[19px] pb-4">Communication</h1>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Communication Skills</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Presentation Skills</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Public Speaking</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Writing</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Power Poing</p>
+            </div>
+             <!-- Card-8 -->
+             <div  class="pt-8 space-y-1">
+              <h1 class="text-white text-[16px] font-[700] leading-[19px] pb-4">Business Analytics</h1>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Microsoft Excel</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">SQL</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Microsoft Power BI</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Data Analysis</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Business Analysis</p>
+            </div>
+          </div>
 
+        </div>
+      </div>
      </div>
      <!-- About us -->
-     <div>
-
+     <div class="2xl:container w-[100%] mx-auto bg-[#121217]  ">
+      <div class=" p-5 afety-container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Card 1 -->
+        <div class="mx-5">
+          <h1 class="mt-4 md:mt-2 text-white text-[16px] font-[700] leading-[19px] pb-4">About</h1>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">About us</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Careers</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Contact us</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Blog</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Investors</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="mx-5">
+          <h1 class="mt-4 md:mt-2 text-white text-[16px] font-[700] leading-[19px] pb-4">Discovery Udemy</h1>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Get the app</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Teach on Udemy</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Plans and Pricing</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Help and Support</p>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Affilate</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="mx-5">
+          <h1 class="mt-4 md:mt-2 text-white text-[16px] font-[700] leading-[19px] pb-4">Udemy for Business</h1>
+              <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Udemy Business</p>
      </div>
+        <!-- Card 4 -->
+        <div class="mx-5 ">
+          <h1 class="mt-4 md:mt-2 text-white text-[16px] font-[700] leading-[19px] pb-4">Legal & Accessibility</h1>
+          <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Accessibility statement</p>
+          <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Privacy policy</p>
+          <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Sitemap</p>
+          <p class="text-white text-[14px] font-[400] leading-[20px] hover:underline cursor-pointer">Terms</p>
+        </div>
+      </div>
+     </div>
+     <hr class="text-white"> 
      <!-- Copy rights -->
-      <div>
-
+      <div class="bg-[#121217] flex items-center ">
+        <div class="mx-5 flex items-center py-5 ">
+            <img src="https://ik.imagekit.io/wknpdt4e9/Revamp%20Assets/Udemy/bg-udemy-logo.png" class="h-12  md:ml-0 justify-center  cursor-pointer bg-[#121217]] text-[#121217]] ">
+            <p class="text-white text-[14px] font-[400] leading-[20px] ml-2">&copy;2025 Udemy,Inc.</p>
+          </div>
+        
+        <div class="flex justify-center items-center">
+          
+          <p class="md:ml-[300px] text-white text-[14px] font-[400] leading-[20px] cursor-pointer hover:underline ">Cookie settings</p>
+          <p class="md:ml-[500px] flex gap-1 md:gap-3 text-white text-[14px] font-[400] leading-[20px] cursor-pointer hover:underline"><svg fill="#fff5f5" class="ml-2 h-5" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#fff5f5"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M32.032 16c0-8.501-6.677-15.472-15.072-15.969-0.173-0.019-0.346-0.032-0.523-0.032-0.052 0-0.104 0.005-0.156 0.007-0.093-0.002-0.186-0.007-0.281-0.007-8.84 0-16.032 7.178-16.032 16.001s7.192 16.001 16.032 16.001c0.094 0 0.188-0.006 0.281-0.008 0.052 0.002 0.104 0.008 0.156 0.008 0.176 0 0.349-0.012 0.523-0.032 8.395-0.497 15.072-7.468 15.072-15.969zM29.049 21.151c-0.551-0.16-1.935-0.507-4.377-0.794 0.202-1.381 0.313-2.84 0.313-4.357 0-1.196-0.069-2.354-0.197-3.469 3.094-0.37 4.45-0.835 4.54-0.867l-0.372-1.050c0.695 1.659 1.080 3.478 1.080 5.386 0 1.818-0.352 3.555-0.987 5.151zM8.921 16c0-1.119 0.074-2.212 0.21-3.263 1.621 0.127 3.561 0.222 5.839 0.243v6.939c-2.219 0.021-4.114 0.111-5.709 0.234-0.22-1.319-0.34-2.715-0.34-4.154zM16.967 2.132c2.452 0.711 4.552 4.115 5.492 8.628-1.512 0.12-3.332 0.209-5.492 0.229v-8.857zM14.971 2.156v8.832c-2.136-0.021-3.965-0.109-5.502-0.226 0.96-4.457 3.076-7.836 5.502-8.606zM14.971 21.913l0 7.929c-2.263-0.718-4.256-3.705-5.293-7.719 1.492-0.11 3.253-0.189 5.292-0.21zM16.967 29.868l-0-7.955c2.061 0.020 3.814 0.102 5.288 0.217-1.019 4.067-3 7.076-5.288 7.738zM16.967 19.92l0-6.939c2.291-0.021 4.218-0.118 5.818-0.25 0.131 1.053 0.203 2.147 0.203 3.268 0 1.442-0.116 2.84-0.329 4.16-1.575-0.128-3.462-0.219-5.692-0.24zM28.588 9.81c-0.302 0.094-1.564 0.453-4.094 0.751-0.564-2.998-1.584-5.561-2.91-7.412 3.048 1.325 5.535 3.697 7.005 6.661zM11.213 2.831c-1.632 1.873-2.963 4.568-3.691 7.754-2.265-0.245-3.623-0.534-4.166-0.665 1.585-3.27 4.407-5.836 7.856-7.088zM2.614 11.787c0.385 0.104 1.841 0.467 4.549 0.766-0.155 1.107-0.24 2.26-0.24 3.447 0 1.509 0.136 2.96 0.383 4.334-2.325 0.251-3.755 0.552-4.396 0.706-0.607-1.566-0.944-3.264-0.944-5.041 0-1.467 0.228-2.883 0.649-4.213zM3.784 22.886c0.727-0.154 2.029-0.39 3.956-0.591 0.759 2.803 1.993 5.175 3.473 6.874-3.16-1.148-5.79-3.398-7.429-6.282v0zM21.583 28.849c1.195-1.665 2.14-3.907 2.728-6.525 1.982 0.227 3.226 0.494 3.853 0.652-1.5 2.596-3.808 4.669-6.581 5.873z"></path> </g></svg>English</p>
+        </div>
       </div>
 
 
