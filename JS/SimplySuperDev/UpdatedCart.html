@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cart Quantity</h1>
+    <button onclick="
+    if(updateCartQuantity<10)
+    {
+        alert('Your Cart has '+updateCartQuantity+' products');
+    }
+    else
+    {
+        alert('Your Cart is full..!');
+    }">Show Quantity</button>
+
+
+    <button onclick="
+    if(updateCartQuantity<10)
+    {
+        updateCartQuantity=updateCartQuantity+1;
+        alert('One Product added successfully')
+    }
+    else alert('Your Cart is full..!')
+    ">Add to Cart</button>
+
+
+    <button onclick="
+    if(updateCartQuantity<10)
+    {
+        updateCartQuantity=updateCartQuantity+2;
+        alert('Two Product added successfully')
+    }
+    else alert('Your Cart is full..!')
+    ">+2</button>
+    <button onclick="
+    if(updateCartQuantity<10)
+    {
+        updateCartQuantity=updateCartQuantity+3;
+        alert('Three Product added successfully')
+    }
+    else alert('Your Cart is full..!')
+    ">+3</button>
+    <button onclick="updateCartQuantity=0">Reset Cart</button>
+    
+    <script>
+        let updateCartQuantity=0;
+    </script>
+    
+</body>
+</html>

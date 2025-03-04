@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guess it...</h1>
+    <h2>Heads OR Tails</h2>
+    <button onclick="Gameplay('Heads')">Head</button>
+    <button onclick="Gameplay('Tails')">Tails</button>
+    <button onclick="let score={Win:0,Loose:0};
+    localStorage.setItem('score',JSON.stringify(score)); alert('Value are Reseted...Score: => Win:'+score.Win+' Loose:'+score.Loose)">Reset Score</button>
+
+    <script>
+        function computerMoveFunct()
+        {
+            let randomNumber=Math.random();
+            
+            if(randomNumber>=0 && randomNumber<0.5)
+            {
+                return 'Heads';
+            }
+            else if(randomNumber>=0.5 && randomNumber<1)
+            {
+                return 'Tails'
+            }
+        }
+
+        function Gameplay(playersMove)
+        {
+            let result='';
+            let score=JSON.parse(localStorage.getItem('score')) || {Win:0,Loose:0};
+
+            let computerMove=computerMoveFunct();
+            if(playersMove==='Heads')
+            {
+                if(computerMove==='Heads')
+                {
+                    result ='Guessed the Correct one :)';  
+                }
+                else
+                result='Sorry You are Wrong :(';
+            }
+            else if(playersMove==='Tails')
+            {
+                if(computerMove==='Tails')
+                {
+                    result ='Guessed the Correct one :)';  
+                }
+                else
+                result='Sorry You are Wrong :(';
+            }
+            if(result==='Guessed the Correct one :)')
+            {
+                score.Win+=1;
+            }
+            else if(result==='Sorry You are Wrong :(')
+            {
+                score.Loose+=1;
+            }
+            localStorage.setItem('score',JSON.stringify(score))
+            alert('Players Guess: '+playersMove+' || Computers Guess: '+computerMove+' || Result: '+result+' ||Score:=> Win: '+score.Win+' Loose:'+score.Loose);
+
+        }
+    </script>
+</body>
+</html>
