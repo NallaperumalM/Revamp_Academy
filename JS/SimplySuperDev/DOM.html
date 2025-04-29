@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Subscribe This!!!</p>
+    <button id="Subcribe-btn" class="p-2 bg-black text-white font-mono font-bold" onclick="subcribe()" >Subscribe</button>
+    <script>
+        
+        function subcribe()
+        {       
+            const btnElement=document.querySelector('#Subcribe-btn')
+            const paraElem=document.querySelector('#para')  
+
+            console.log(document.btnElement)
+            if(btnElement.innerText === "Subscribe")
+            {
+                btnElement.innerText="Subscribed"
+                btnElement.className="bg-green-700 text-white p-2 font-mono font-bold"
+                paraElem.innerText="Subscribed Sucessfully :) "            
+            }
+            else if(btnElement.textContent === 'Subscribed')
+            {
+               paraElem.innerText="Subscribe This!!!"
+               btnElement.className="bg-black text-white p-2 font-mono font-bold"
+               btnElement.innerText="Subscribe"
+                            
+            }
+            
+        }
+
+       
+    </script>
+</body>
+</html>

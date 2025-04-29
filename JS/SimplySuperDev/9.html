@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btnclass">9a</button>
+    <button onclick="changeText()" class="sec-btn">9b</button>
+    <button class="HeadBtn" onclick="ParaElem.innerHTML='You selected Heads';">Heads</button>
+    <button class="TailBtn" onclick="ParaElem.innerHTML='You selected Tails';">Tails</button>
+    <p class="paracls"></p>
+    <input type="text" class="inpCls" onkeydown="handleEvents()">
+    <button class="subBtncls" onclick="input()">Submit</button>
+    <p class="para2"></p>
+
+    <input type="text" class="input-2" onkeyup="keyUp()">
+    <p class="para-3"></p>
+    <script>
+        let btnElem=document.querySelector('.btnclass');
+        let sec_btnElem=document.querySelector('.sec-btn');
+        let HeadbtnElem=document.querySelector('.HeadBtn');
+        let TailBtnElem=document.querySelector('.TailBtn');
+        let ParaElem=document.querySelector('.paracls');
+
+
+        let inputElem=document.querySelector('.inpCls');
+        let subBtnElem=document.querySelector('.subBtncls');
+        let para2=document.querySelector('.para2');
+
+
+        let input2Elem=document.querySelector('.input-2');
+        let para3Elem=document.querySelector('.para-3');
+        console.log(btnElem.innerHTML);
+
+        function changeText()
+        {
+            if(sec_btnElem.innerText=='9b')
+               sec_btnElem.innerHTML='9b done';
+            else
+              sec_btnElem.innerHTML='9b';
+        }
+
+        function input()
+        {
+            para2.innerHTML=`Your Name is:${inputElem.value}`;
+        }
+        function handleEvents()
+        {
+            if(event.key==='Enter')
+            {
+                input()
+            };
+        }
+        
+        function keyUp()
+        {
+            para3Elem.innerHTML=input2Elem.value;
+        }
+        
+    </script>
+</body>
+</html>

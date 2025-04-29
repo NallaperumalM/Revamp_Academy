@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p class="para font-mono font-bold text-red-700" onclick="functionality()">YouTube Subscribe Button</p>
+    <button class="btn bg-red-700 text-white font-bold p-2 rounded-full px-3" onclick="functionality()">Subscribe</button>
+    <p class="para-2 font-mono font-bold text-red-700" onclick="functionality()"></p>
+
+    <script>
+
+        const paraEle=document.querySelector('.para');
+        const btnElem=document.querySelector('.btn');
+        const paraElem2=document.querySelector('.para-2')
+        
+
+        function functionality()
+        {
+                if(btnElem.innerText==='Subscribe')
+                {
+                    btnElem.innerText='Subscribed'
+                    paraElem2.innerText='Subscribed Successfully....!'
+                    btnElem.className='bg-green-700 text-white font-bold p-2 rounded-full px-3'
+                }
+                else if(btnElem.innerText==='Subscribed')
+                {
+                    btnElem.innerText='Subscribe';
+                    paraElem2.innerText='Please Press the Subscribe Button';
+                    btnElem.classList='bg-red-700 text-white font-bold p-2 rounded-full px-3'
+                }
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="ShowQuanscls" onclick="Buttonclic('Show Quantity')">Show Quantity</button>
+    <button class="Addtocls" onclick="cartQuantity+=1; Buttonclic('Add to cart')">Add to Cart</button>
+    <button class="plus2cls"  onclick="cartQuantity+=2;Buttonclic('+2')">+2</button>
+    <button class="plus3cls"  onclick="Buttonclic('+3')">+3</button>
+    <button class="plus4cls"  onclick="Buttonclic('+4')">+4</button>
+    <button class="plus5cls"  onclick="Buttonclic('+5')">+5</button>
+    <button class="RfCartcls"  onclick="Buttonclic('Remove')">Remove From Cart</button>
+    <button class="minus2cls"  onclick="Buttonclic('-2')">-2</button>
+    <button class="minus3cls"  onclick="Buttonclic('-3')">-3</button>
+
+    <p class="paracls"></p>
+
+
+    <script>
+        let cartQuantity=0;
+        let ShowElem=document.querySelector('.ShowQuanscls');
+        let AddtoCartElem=document.querySelector('.Addtocls');
+        let plus2Elem=document.querySelector('.plus2cls');
+        let plus3Elem=document.querySelector('.plus3cls');
+        let plus4Elem=document.querySelector('.plus4cls');
+        let plus5Elem=document.querySelector('.plus5cls');
+        let RemoveElem=document.querySelector('.RfCartcls');
+        let minus2Elem=document.querySelector('.minus2cls');
+        let minus3Elem=document.querySelector('.minus3cls');
+        let paraElem=document.querySelector('.paracls');
+        
+        function Buttonclic(move)
+        {
+           const cartQuantity=0;
+           if(move==='Show Quantity')
+           {
+            paraElem.innerHTML=`Cart Quantity ${cartQuantity}`;
+           }
+           else if(move==='Add to cart')
+           {
+            
+            paraElem.innerHTML=`Cart Quantity ${cartQuantity+1}`;
+           }
+           else if(move==='+2')
+           {
+            paraElem.innerHTML=`Cart Quantity ${cartQuantity+2}`;
+           }
+           else if(move==='+3')
+           {
+            cartQuantity+=3;
+            paraElem.innerHTML=`Cart Quantity ${cartQuantity}`;
+           }
+           else if(move==='+4')
+           {
+            cartQuantity+=4;
+            paraElem.innerHTML=`Cart Quantity ${cartQuantity}`;
+           }
+           else if(move==='+5')
+           {
+            cartQuantity+=5;
+            paraElem.innerHTML=`Cart Quantity ${cartQuantity}`;
+           }
+           else if(move==='Remove')
+           {
+            cartQuantity-=1;
+            paraElem.innerHTML=`Cart Quantity ${cartQuantity}`;
+           }
+           else if(move==='-2')
+           {
+            cartQuantity-=2;
+            paraElem.innerHTML=`Cart Quantity ${cartQuantity}`;
+           }
+           else if(move==='-3')
+           {
+            cartQuantity-=3;
+            paraElem.innerHTML=`Cart Quantity ${cartQuantity}`;
+           }
+        }
+
+
+
+    </script>
+</body>
+</html>

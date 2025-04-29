@@ -8,7 +8,13 @@
 <body>
     <h1>Cart Quantity</h1>
     <button onclick="
-    if(cartQuantity>1){console.log('Cart Quantity:'+cartQuantity)} else{console.log('Cart is empty now..')}">Show Quantity</button>
+    if(cartQuantity>1)
+    {
+        console.log('Cart Quantity:'+cartQuantity)
+        } 
+        else{
+            console.log('Cart is empty now..')
+            }">Show Quantity</button>
     <button onclick="cartQuantity=cartQuantity+1;
     console.log('One product added successfully..')">Add to Cart</button>
     <button onclick="cartQuantity=cartQuantity+2;

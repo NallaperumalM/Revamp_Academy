@@ -10,47 +10,47 @@
     <h2>Heads OR Tails</h2>
     <button onclick="Gameplay('Heads')">Head</button>
     <button onclick="Gameplay('Tails')">Tails</button>
-    <button onclick="let score={Win:0,Loose:0};
-    localStorage.setItem('score',JSON.stringify(score)); alert('Value are Reseted...Score: => Win:'+score.Win+' Loose:'+score.Loose)">Reset Score</button>
+    <p class="resulthc"></p>
+    <p class="YourMovehc"></p>
+    <p class="ComMovehc"></p>
+    <p class="scorehc"></p>
+    <button onclick="resetvalue()">Reset Score</button>
 
-    <script>
-        function computerMoveFunct()
-        {
-            let randomNumber=Math.random();
+    <script>       
+          function computerMoveFunct()
+             {
+              
+                let randomNumber=Math.random();
+                if(randomNumber>=0 && randomNumber<0.5)
+                {
+                  return 'Heads';
+                }
+                else if(randomNumber>=0.5 && randomNumber<1)
+                {
+                    return 'Tails'
+                }
             
-            if(randomNumber>=0 && randomNumber<0.5)
-            {
-                return 'Heads';
             }
-            else if(randomNumber>=0.5 && randomNumber<1)
-            {
-                return 'Tails'
-            }
-        }
 
+        let score=JSON.parse(localStorage.getItem('score')) || {Win:0,Loose:0};
         function Gameplay(playersMove)
         {
             let result='';
-            let score=JSON.parse(localStorage.getItem('score')) || {Win:0,Loose:0};
-
+            
             let computerMove=computerMoveFunct();
             if(playersMove==='Heads')
             {
                 if(computerMove==='Heads')
-                {
                     result ='Guessed the Correct one :)';  
-                }
                 else
-                result='Sorry You are Wrong :(';
+                    result='Sorry You are Wrong :(';
             }
             else if(playersMove==='Tails')
             {
                 if(computerMove==='Tails')
-                {
-                    result ='Guessed the Correct one :)';  
-                }
+                    result ='Guessed the Correct one :)';                 
                 else
-                result='Sorry You are Wrong :(';
+                    result='Sorry You are Wrong :(';
             }
             if(result==='Guessed the Correct one :)')
             {
@@ -60,9 +60,29 @@
             {
                 score.Loose+=1;
             }
-            localStorage.setItem('score',JSON.stringify(score))
-            alert('Players Guess: '+playersMove+' || Computers Guess: '+computerMove+' || Result: '+result+' ||Score:=> Win: '+score.Win+' Loose:'+score.Loose);
+            
+            localStorage.setItem('score',JSON.stringify(score));
+            displayScore();
+            document.querySelector('.resulthc').innerHTML=result;
+            document.querySelector('.YourMovehc').innerHTML=`Your Choice:${playersMove}`;
+            document.querySelector('.ComMovehc').innerHTML=`Computer Choice:${computerMove}`;
+            
+            
+            // alert('Players Guess: '+playersMove+' || Computers Guess: '+computerMove+' || Result: '+result+' ||Score:=> Win: '+score.Win+' Loose:'+score.Loose);
+        }
 
+            function displayScore()
+            {  
+               document.querySelector('.scorehc').innerText=`Win:${score.Win} || Loose:${score.Loose}`
+            }
+
+        function resetvalue()
+        {
+            score.Win=0;score.Loose=0;localStorage.removeItem('score');displayScore()
+            document.querySelector('.resulthc').innerHTML='Value Reseted!!';
+            document.querySelector('.YourMovehc').innerHTML='';
+            document.querySelector('.ComMovehc').innerHTML='';
+    
         }
     </script>
 </body>
