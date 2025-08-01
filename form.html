@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+</head>
+
+<body>
+    <form action="">
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input id="emailbtn">
+        <p id="mailerror"></p>
+
+
+        <!-- PassWord -->
+        <label for="password">Password:</label>
+        <input id="passwordbtn">
+        <p id="passworderror"></p>
+        <button>Submit</button>
+    </form>
+
+    <script>
+        const formElem = document.querySelector('form');
+        const emailElem = document.getElementById("emailbtn");
+        const passwordElem = document.getElementById("passwordbtn");
+
+        const mailError = document.getElementById("mailerror");
+        const passwordError = document.getElementById("passworderror");
+
+
+        function ValidateData(email, password) {
+            let isValid = true;
+
+            console.log(email, password);
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const passwordRegix = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,16}$/;
+
+            if (!email.match(emailRegex)) {
+                mailError.textContent = "Please Enter a Valid Mail Id";
+                isValid = false;
+            }
+            if (!password.match(passwordRegix))
+            {
+                passwordError.textContent="Please Enter a Strong Password"
+                isValid=false;
+            }
+        }
+
+        formElem.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            console.log(emailElem.value);
+            console.log(passwordElem.value);
+
+            ValidateData(emailElem.value, passwordElem.value);
+        })
+
+
+    </script>
+</body>
+
+</html>
